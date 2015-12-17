@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nwpu.heartwings.FuncionActivity" >
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_action_picture"
+        android:title="@string/menu_share"
+       app:showAsAction="ifRoom">
+    </item>
+    
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/ic_action_overflow"
+        android:title="@string/menu_share"
+       app:showAsAction="ifRoom">
+    </item>
+    
+</menu>

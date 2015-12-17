@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nwpu.heartwings"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="com.nwpu.heartwings.app.HeartApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="MDBBZ-YAD3P-M5XDP-VNF3X-CH3U2-Z6BCZ" />
+
+        <activity
+            android:name="com.nwpu.heartwings.LuanchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.GuideActivity"
+            android:label="@string/title_activity_guide" >
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.WelcomeActivity"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.LoginActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.RegisterActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="com.nwpu.heartwings.activities.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.Register2Activity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="com.nwpu.heartwings.activities.RegisterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.RegisterActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.Register3Activity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="com.nwpu.heartwings.activities.Register2Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.Register2Activity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.FuncionActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/app_cn" >
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.share.ImageScanActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/app_cn"
+            android:parentActivityName="com.nwpu.heartwings.activities.FunctionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.FunctionActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.share.ImageShowActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/app_cn"
+            android:parentActivityName="com.nwpu.heartwings.share.ImageScanActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.share.ImageScanActivity" />
+        </activity>
+
+        <service
+            android:name="com.nwpu.heartwings.services.MinaService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.nwpu.service.mina" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.nwpu.heartwings.activities.SearchingActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_searching"
+            android:parentActivityName="com.nwpu.heartwings.activities.Menu_Setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.Menu_Setting" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.BindResultActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_bind_result"
+            android:launchMode="singleTask"
+            android:taskAffinity="" >
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.ShowMapActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_show_map"
+            android:parentActivityName="com.nwpu.heartwings.activities.FuncionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.FuncionActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.SetAgendaActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/agenda_label"
+            android:parentActivityName="com.nwpu.heartwings.activities.FuncionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.FuncionActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.SetEmergencyActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/emergency"
+            android:parentActivityName="com.nwpu.heartwings.activities.FuncionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.FuncionActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.AboutActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.nwpu.heartwings.activities.Menu_Setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.Menu_Setting" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.FeedBackActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_feed_back"
+            android:parentActivityName="com.nwpu.heartwings.activities.Menu_Setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.Menu_Setting" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.activities.ImageViewActivity"
+            android:theme="@style/ImageScale" >
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.ChangePwdActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_change_pwd"
+            android:parentActivityName="com.nwpu.heartwings.activities.Menu_Setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.Menu_Setting" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.NewsContentActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_news_content"
+            android:parentActivityName="com.nwpu.heartwings.activities.FuncionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.FuncionActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.SecondSetAgendaActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_second_set_agenda"
+            android:parentActivityName="com.nwpu.heartwings.activities.FuncionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.activities.FuncionActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.SetMedicineActivity"
+            android:icon="@drawable/logo1"
+            android:label="@string/title_activity_set_medicine"
+            android:parentActivityName="com.nwpu.heartwings.SecondSetAgendaActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.SecondSetAgendaActivity" />
+        </activity>
+        <activity
+            android:name="com.nwpu.heartwings.BirthdayActivity"
+            android:label="@string/title_activity_birthday"
+             android:icon="@drawable/logo1"
+            android:parentActivityName="com.nwpu.heartwings.SecondSetAgendaActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nwpu.heartwings.SecondSetAgendaActivity" />
+        </activity>
+        
+        <activity 
+             android:icon="@drawable/logo1"
+            android:name="com.nwpu.heartwings.activities.Menu_Setting"
+            android:label="@string/menu_setting"></activity>
+    </application>
+
+</manifest>

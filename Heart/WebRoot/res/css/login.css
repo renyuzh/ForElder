@@ -1,0 +1,83 @@
+        #headline {
+            padding: 0.8em;
+            color: white;
+            font-family: Roboto, helvetica, arial, sans-serif;
+            background-color: black;
+            background-image: url(../img/bg.jpg);
+            background-size: cover;
+            
+        }
+        #headline h1 {
+            font-weight: 200;
+            font-size: 60px;
+            line-height: 1em;
+            margin-bottom: 0;
+        }
+        #headline h2 {
+            font-weight: 200;
+            font-size: 30px;
+            margin-top: 5px;
+        }
+        #headline #blurb {
+            font-weight: 200;
+            font-size: 18px;
+        }
+        #headline #register {
+            background-color: #39b1a4;
+            background-color: rgba(198, 207, 207, 0.7);
+            padding: 1em;
+        }
+        #headline #register h2 {
+            font-weight: 100;
+            padding: 0;
+            margin: 0;
+        }
+        #headline #register label {
+            font-size: 1.2em;
+            font-weight: 200;
+            padding-top: 12px;
+            display: block;
+        }
+        #headline #register input {
+            width: 100%;
+            font-size: 18px;
+            font-weight: 200;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #headline #register input[type=submit] {
+            background-color: hsl(149, 43%, 69%);
+            color: white;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        @media screen and (min-width: 600px) {
+            #headline {
+                padding: 20px 5%;
+            }
+            .container {
+                margin: auto;
+                max-width: 800px;
+            }
+            #headline #blurb {
+                float: left;
+                font-weight: 200;
+                width: 50%;
+                font-size: 18px;
+                box-sizing: border-box;
+                padding-right: 10px;
+            }
+            #headline br {
+                clear: both;
+            }
+            #headline #register {
+                float: right;
+                padding: 20px;
+                width: 50%;
+                box-sizing: border-box;
+                font-weight: 300;
+            }
+        }

@@ -1,0 +1,106 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+       <style name="user_name_position">
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textSize">11.0dip</item>
+    </style>
+    
+           <style name="moment_big_dot">
+        <item name="android:paddingLeft">7.0px</item>
+        <item name="android:paddingTop">6.0px</item>
+        <item name="android:paddingRight">7.0px</item>
+        <item name="android:paddingBottom">8.0px</item>
+    </style>
+    
+             <style name="moment_small_dot">
+        <item name="android:paddingLeft">6.0px</item>
+        <item name="android:paddingTop">5.0px</item>
+        <item name="android:paddingRight">6.0px</item>
+        <item name="android:paddingBottom">7.0px</item>
+    </style>
+    
+             <style name="moment_people_photo">
+        <item name="android:layout_width">37.0px</item>
+        <item name="android:layout_height">37.0px</item>
+        <item name="android:layout_marginLeft">7.0px</item>
+        <item name="android:layout_marginTop">6.0px</item>
+    </style>
+      <style name="base_text">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+     <style name="feed_text" parent="@style/base_text">
+        <item name="android:textColor">#ff333333</item>
+    </style>
+    
+          <style name="agendastyle" parent="android:Animation">  
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>  //进入时的动画  
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>    //退出时的动画  
+    </style>  
+    
+              <style name="text_black_small">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    
+                  <style name="default_edit">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/bg_edit_selector</item>
+    </style>
+    
+                   <style name="settings_item">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    
+                   <style name="ImageloadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item><!--无边框-->
+        <item name="android:windowNoTitle">true</item><!--没有标题-->
+        <item name="android:windowIsFloating">true</item><!--是否浮在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--背景是否半透明-->
+        <item name="android:windowContentOverlay">@null</item><!--对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!--动画样式-->
+        <item name="android:backgroundDimEnabled">true</item><!--背景是否模糊-->
+    </style>
+    
+                    <style name="AnimImageShow" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/image_in</item>
+        <item name="android:windowExitAnimation">@anim/image_out</item>
+    </style>
+    
+                    
+                    <style name="ImageScale" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimImageShow</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 设置全屏显示 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+</resources>

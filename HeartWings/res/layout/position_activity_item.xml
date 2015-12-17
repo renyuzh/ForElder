@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+     <RelativeLayout
+        android:id="@+id/position_track"
+        android:layout_width="52.0dip"
+        android:layout_height="65.0dip" >
+     <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="6.0dip" 
+            android:contentDescription="@string/app_name"
+            />
+
+        <ImageView
+            android:id="@+id/user_photo_overlay"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="6.0dip"
+            android:src="@drawable/moment_avatar" 
+            android:contentDescription="@string/app_name"
+            />
+        
+              <TextView
+            android:id="@+id/username_position"
+            style="@style/user_name_position"
+            android:layout_width="44.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="51.0dip"
+            android:gravity="center" />
+              
+        </RelativeLayout>
+        
+      <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/position_track"
+        layout="@layout/postion_helper_item"
+        />
+</RelativeLayout>

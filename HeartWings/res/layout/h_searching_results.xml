@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+    >
+        <ImageView  
+           android:id="@+id/img_user"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_action_user"
+          android:contentDescription="@string/app_cn" >
+          </ImageView>
+        <TextView
+     android:id = "@+id/display_result"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:textSize="25sp"
+     android:textColor="#aaa"
+     android:layout_alignRight="@id/img_user"
+>    
+     </TextView>
+    
+</RelativeLayout>
+  
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:paddingBottom="20dip">
+        
+            <TextView
+           android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/account_issue"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff0000" >
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/change_pwd_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_more"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="@string/change_pwd"
+            android:textSize="18sp"
+            android:textColor="@color/textgray" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/shallowgray" >
+        </LinearLayout>
+        
+      <!--   <Button
+            android:id="@+id/fall_record_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_more"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="@string/fall_record"
+            android:textSize="18sp"
+            android:textColor="@color/textgray" />
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/shallowgray" >
+        </LinearLayout> -->
+
+                  <Button
+            android:id="@+id/set_emergency_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_more"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="@string/emergency"
+            android:textSize="18sp"
+            android:textColor="@color/textgray" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/shallowgray" >
+        </LinearLayout>
+        
+                       <Button
+            android:id="@+id/invite_other2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_more"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="@string/invite_other"
+            android:textSize="18sp"
+            android:textColor="@color/textgray" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/shallowgray" >
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/menu_setting"
+            android:textSize="25sp"
+            android:textColor="#000000" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff0000" >
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/feedback_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_more"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="@string/feedback"
+            android:textSize="18sp"
+            android:textColor="@color/textgray" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/shallowgray" >
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/check_new_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_more"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="@string/check_new_version"
+            android:textSize="18sp"
+            android:textColor="@color/textgray" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/shallowgray" >
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/about_us_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_more"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="@string/about_us"
+            android:textSize="18sp"
+            android:textColor="#A39898" />
+        
+
+</LinearLayout>

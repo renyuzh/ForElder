@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pushu" >
+
+    <ImageView
+        android:id="@+id/toImageView"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+          android:layout_alignTop="@+id/fromImageView"
+        android:src="@drawable/sds" />
+
+    <ImageView
+        android:id="@+id/fromImageView"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/wes" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_above="@id/toImageView"
+        android:layout_alignLeft="@id/fromImageView"
+        android:layout_alignRight="@id/toImageView"
+        android:hint="@string/input_agenda_hint"
+      
+        android:textColorHint="#CCCCCC"
+        android:textColor="#FFFFFF"
+        android:ems="12" >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/fromImageView"
+        android:layout_alignLeft="@id/fromImageView"
+        android:layout_marginTop="21dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_alignLeft="@id/fromImageView"
+        android:textColor="#999999"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignTop="@id/textView1"
+          android:layout_alignRight="@id/toImageView"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@id/textView2"
+         android:layout_alignRight="@id/toImageView"
+        android:textColor="#999999"
+        android:textSize="23sp" />
+
+</RelativeLayout>

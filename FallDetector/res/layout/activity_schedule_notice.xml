@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.heartwings.care.ScheduleNoticeActivity" >
+
+    <TextView
+        android:id="@+id/scheduleContent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/border"
+        android:scrollbars="vertical"
+        android:text="记得准时吃药！"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/scheduleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:text="时间：2014年8月4日16:35"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/scheduleAckButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_btn_selector"
+            android:text="知道了"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/scheduleDelayButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_btn_selector"
+            android:text="推迟十分钟"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/scheduleNakButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_btn_selector"
+            android:text="取消"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+</LinearLayout>

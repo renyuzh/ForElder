@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nwpu.heartwings.FuncionActivity" >
+
+    
+    <item
+        android:id="@+id/action_postion"
+        android:icon="@drawable/ic_action_locate"
+        android:title="@string/title_activity_show_map"
+       app:showAsAction="ifRoom">
+    </item>
+    
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/ic_action_overflow"
+        android:title="@string/title_activity_show_map"
+       app:showAsAction="ifRoom">
+    </item>
+    
+</menu>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/second_set_agenda_bg"
+    android:background="@drawable/pushu"
+    >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:layout_marginTop="40dip"
+        android:id="@+id/single_event_layout"
+        android:background="@drawable/single_event_bg"
+        >
+        
+        <EditText
+            android:id="@+id/single_event_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+           android:background="@drawable/event_input"
+            android:hint="@string/input_agenda_hint"
+            />
+      
+        <TextView
+            android:id="@+id/single_event_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dip"
+            android:layout_below="@id/single_event_content"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:background="@drawable/show_time"
+            android:drawableStart="@drawable/clock"
+            />
+        
+        <Button 
+            android:id="@+id/save_and_send_agendaBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sava_agenda"
+             android:background="@drawable/login_btn_selector"
+            android:focusable="false"
+            android:textColor="#fff"
+            android:layout_below="@id/single_event_time"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    
+    
+     <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+              android:paddingTop="100dip"
+        android:layout_centerInParent="true"
+             android:layout_below="@id/single_event_layout"
+         >
+         
+          <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+         <RelativeLayout 
+              android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:layout_weight="1"
+           
+             >
+              <ImageView 
+                  android:id="@+id/medicine_icon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/medicine"
+             
+             />
+             <TextView 
+                  android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/medicine_icon"
+             android:paddingTop="5dip"
+             android:text="@string/eat_medicine"
+             android:textColor="#000"
+             android:gravity="center"
+                 />
+         </RelativeLayout>
+            <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+                  <RelativeLayout 
+              android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+           
+             >
+              <ImageView 
+                  android:id="@+id/birthday_icon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/birthday"
+             
+             />
+             <TextView 
+                  android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/birthday_icon"
+             android:paddingTop="5dip"
+             android:text="@string/birthday"
+             android:textColor="#000"
+           
+                 />
+         </RelativeLayout>
+         
+                   <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+                            <RelativeLayout 
+              android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" 
+           
+             >
+              <ImageView 
+                  android:id="@+id/memory_icon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/memory"
+             
+             />
+             <TextView 
+                  android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/memory_icon"
+             android:paddingTop="5dip"
+             android:text="@string/memory"
+             android:textColor="#000"
+           
+                 />
+         </RelativeLayout>
+         
+                            <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+                              <RelativeLayout 
+              android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+          
+             >
+              <ImageView 
+                  android:id="@+id/drink_icon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/drink"
+            
+             />
+             <TextView 
+                  android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/drink_icon"
+             android:paddingTop="5dip"
+             android:text="@string/drink"
+             android:textColor="#000"
+       
+                 />
+         </RelativeLayout>
+         
+                               <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+                               
+             <RelativeLayout 
+              android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+               android:layout_weight="1"
+        
+             >
+              <ImageView 
+                  android:id="@+id/other_icon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/other"
+          
+             />
+             <TextView 
+                  android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/other_icon"
+             android:paddingTop="5dip"
+             android:text="@string/other"
+             android:textColor="#000"
+          
+                 />
+         </RelativeLayout>
+
+              <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+</LinearLayout>
+   
+</RelativeLayout>
+

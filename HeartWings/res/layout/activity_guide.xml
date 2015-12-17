@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ImageView
+            android:id="@+id/mainBgImage"
+            android:layout_width="fill_parent"
+            android:layout_height="1500dip"
+            android:scaleType="fitStart"
+            android:src="@drawable/guide_bg" />
+       </LinearLayout>
+       
+   <android.support.v4.view.DirectionalViewPager
+    android:id="@+id/guide_pager"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" />
+</FrameLayout>

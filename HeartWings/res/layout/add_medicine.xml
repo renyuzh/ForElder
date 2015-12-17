@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <RelativeLayout 
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:id="@+id/title_layout"
+        >
+        <EditText 
+        android:id="@+id/medicine_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:padding="20dip"
+         android:hint="@string/input_agenda_hint"
+        android:background="@drawable/event_input"
+        android:drawableStart="@drawable/agenda_logo"
+        />
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/agenda_list"
+        android:layout_below="@id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        >
+        
+    </ListView>
+    
+    <ImageView 
+        android:id="@+id/add_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/addone"
+        android:layout_below="@id/agenda_list"
+        />
+    
+</RelativeLayout>

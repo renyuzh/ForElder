@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <RelativeLayout 
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:id="@+id/birth_title_layout"
+        >
+        <EditText 
+        android:id="@+id/birthday_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:padding="20dip"
+         android:hint="@string/input_agenda_hint"
+        android:background="@drawable/event_input"
+        android:drawableStart="@drawable/agenda_logo"
+        />
+        
+    </RelativeLayout>
+    
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/birth_title_layout"
+         android:background="@drawable/birth_time"
+         >
+         
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/agenda_icon"
+             android:layout_weight="1"
+                android:paddingTop="10dip"
+             android:paddingBottom="10dip"
+             android:src="@drawable/cake"
+             />
+         <Space 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+               android:layout_weight="1"
+             />
+         <TextView 
+             android:id="@+id/birth_time_txt"
+               android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#111"
+             android:paddingTop="10dip"
+             android:paddingBottom="10dip"
+              android:layout_weight="1"
+             android:text="@string/default_birth"
+             android:textSize="14sp"
+             />
+           <Space 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+               android:layout_weight="1"
+             />
+     </LinearLayout>
+</RelativeLayout>
+

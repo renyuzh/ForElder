@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff2eee8" >
+
+      <!--        <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/button_normal"
+        android:gravity="center_vertical" > -->
+
+ <!--        <ImageView
+            android:id="@+id/action_in_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_action_place" />
+
+        <ImageView
+            android:id="@+id/logo_in_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo123" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="10dip"
+         
+            android:layout_toRightOf="@id/logo_in_menu"
+            android:text="@string/app_cn"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+    </RelativeLayout> -->
+        <!-- timeline on left -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/timeline_track"
+            android:layout_width="2dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="72.0dip"
+            android:background="#ffff0000"
+            android:scaleType="fitXY"
+            android:src="@drawable/feed_item_track" />
+    </RelativeLayout>
+    
+    <com.dafruits.android.library.widgets.ExtendedListView
+        xmlns:dafruits="http://schemas.android.com/apk/res/com.nwpu.heartwings"
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:choiceMode="singleChoice"
+        dafruits:scrollBarPanel="@layout/scrollbarpanel"
+        >
+        
+    </com.dafruits.android.library.widgets.ExtendedListView>
+      
+    
+
+</RelativeLayout>

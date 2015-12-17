@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+            
+    <LinearLayout 
+        android:id="@+id/searchbox"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        >
+        
+                 <EditText
+            android:id="@+id/binding_searchtext_search"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="5dip"
+             android:layout_weight="1"
+        android:layout_width="0dp"
+        android:inputType="number"
+            android:maxLength="11"
+            android:hint="@string/binding_input_hint"
+            android:singleLine="true"/>
+
+         <Button 
+             android:id="@+id/searching_bind"
+              android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginRight="5dip"
+               android:background="@drawable/login_btn_selector"
+                android:text="@string/searching"
+               android:textColor="#FFF"
+             />
+         
+        
+    </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/showSearchingResult"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingTop="50dp"
+             android:gravity="center"
+            >
+
+         </LinearLayout> 
+</LinearLayout>
+

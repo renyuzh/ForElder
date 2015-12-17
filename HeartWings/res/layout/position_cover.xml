@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:layout_width="fill_parent"
+        android:layout_height="160dip"
+        android:background="@drawable/linen_background_tile" >
+        
+              <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY" 
+            android:src="@drawable/cover_overlay"
+            />
+        
+          <ImageView
+            android:id="@+id/cover_refresh"
+            android:layout_width="61.0dip"
+            android:layout_height="61.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="center"
+            android:src="@drawable/cover_refresh" />
+        </RelativeLayout>
+
+</LinearLayout>

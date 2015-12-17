@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/medicine_item" 
+    android:padding="10dip"
+    android:background="#FAFAFA"
+    >
+    
+    <TextView 
+        android:id="@+id/agenda_the_th"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#111"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+         android:layout_gravity="fill"
+         android:layout_weight="1"
+         android:drawableLeft="@drawable/pill"
+        />
+     <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    <TextView 
+        android:id="@+id/agenda_time_clock"
+        android:layout_weight="1"
+         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#555"
+         android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+          
+        />
+ <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+       <ImageView 
+           android:id="@+id/delete_icon"
+            android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:src="@drawable/delete"
+ android:layout_weight="1"
+           />
+</LinearLayout>

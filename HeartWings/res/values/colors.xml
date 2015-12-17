@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="backgroundcolor">#f0f0f0</color>
+    <color name="shallowgray">#e1e1e1</color>
+    <color name="textgray">#A39898</color>
+    <color name="shallowgreen">#C9EAE8</color>
+    <color name="transparentgray">#53756E60</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="popup_main_background">#b0000000</color>
+</resources>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nwpu.heartwings.ShowMapActivity" >
+
+    <item
+        android:id="@+id/action_refresh_map"
+        android:icon="@drawable/cover_refresh"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_show_map"
+        app:showAsAction="ifRoom"/>
+
+</menu>

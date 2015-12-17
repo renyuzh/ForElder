@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+             
+                  <com.nwpu.heartwings.listview.SlideCutListView
+                       android:id="@+id/emergency_list"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:cacheColorHint="@android:color/transparent"
+                  android:listSelector="@android:color/transparent"
+                  android:paddingTop="10dp"
+                 />
+                  
+     <LinearLayout  
+        android:orientation="vertical"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="center"  
+        android:layout_centerInParent="true"> 
+        
+
+             
+              <ImageView 
+          android:src="@drawable/ic_action_phone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:gravity="center"
+         android:contentDescription="@string/emergency_none"
+          />
+            
+              <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#999"
+                  android:text="@string/emergency_none"
+                  android:textSize="18sp"
+                  />
+         </LinearLayout>
+
+</RelativeLayout>
+

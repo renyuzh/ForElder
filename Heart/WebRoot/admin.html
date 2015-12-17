@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>牵挂</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="res/css/login.css" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #eee;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--[if lt IE 9]><div style="position:fixed;top:0;left:0;right:0;bottom:0;background:black;z-index:999999999;text-align:center;"><a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie"><img src="res/img/lowIE.png" alt="æ¨æ­£å¨ä½¿ç¨æ§çæ¬çInternet Exploreræµè§å¨" /></a></div><![endif]-->
+    <div id="headline">
+        <div class="container">
+            <h1>Heart Wing</h1>
+            <h2></h2>
+            <div id="blurb">
+                <p>
+                牵挂你我
+                </p>
+           
+            </div>
+            <form method="post" id="register" action="adminLogin">
+                <h2>管理员登录</h2>
+                <label for="name">账号</label>
+                <input type="text" name="name" id="name" placeholder="您的账号" required>
+                <label for="pwd">密码</label>
+                <input type="password" name="pwd" id="pwd" required>
+                <input type="submit" value="登录">
+            </form>
+            <br>
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	
+	
+	var h=window.innerHeight
+	|| document.documentElement.clientHeight
+	|| document.body.clientHeight;
+	
+	console.log(h);
+	
+	$("#headline").height(h * 0.95);
+	
+	$(window).resize(function(){
+		
+		var nh=window.innerHeight
+		|| document.documentElement.clientHeight
+		|| document.body.clientHeight;
+		
+		console.log(nh);
+		
+		$("#headline").height(nh * 0.95);
+	});
+});
+
+</script>
+</body>
+
+</html>
